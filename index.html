@@ -54,6 +54,7 @@ section{padding:76px 40px}
 
 /* GALERIE */
 #galerie{background:#000;padding:0;position:relative;overflow:hidden;height:75vh;max-height:600px;min-height:300px;width:100%;margin:0}
+@media(max-width:700px){#galerie{height:55vh;min-height:250px}}
 .gallery-track{display:flex;height:100%;transition:transform .8s ease-in-out;width:100%}
 .gallery-slide{min-width:100%;height:100%;position:relative;flex-shrink:0;overflow:hidden}
 .gallery-slide img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9}
@@ -228,9 +229,8 @@ footer a{color:var(--light-blue);text-decoration:none}
     </div>
 
     <div class="croi-card">
-      <div class="croi-photo" style="background:linear-gradient(135deg,#52b788,#1b4332)">
-        <div class="ph-icon">📷</div>
-        <div class="ph-label">VOTRE PHOTO — Guadeloupe</div>
+      <div class="croi-photo" style="background:linear-gradient(135deg,#52b788,#1b4332);overflow:hidden;padding:0">
+        <img src="https://i.postimg.cc/L600QGsr/b69f9a19-6145-45d0-b7ad-b5bdacc35fc0.jpg" alt="Tour de Guadeloupe" style="width:100%;height:100%;object-fit:cover;opacity:.9">
         <div class="croi-badge">7 jours</div>
       </div>
       <div class="croi-body">
@@ -385,7 +385,7 @@ footer a{color:var(--light-blue);text-decoration:none}
         <div class="big">📅</div>
         <h3>Réservez votre croisière</h3>
         <p>Consultez les disponibilités du Sun Odyssey 49 et réservez votre croisière directement en ligne. Précisez votre formule souhaitée lors de la demande.</p>
-        <a href="https://calendly.com/greg-gregloc/30min" target="_blank" class="calendly-link">→ Voir les disponibilités</a>
+        <a href="https://calendly.com/jojuel-sailing" target="_blank" class="calendly-link">→ Voir les disponibilités</a>
       </div>
     </div>
   </div>
