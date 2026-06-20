@@ -53,7 +53,7 @@ section{padding:76px 40px}
 .btn-book:hover{background:var(--dark)}
 
 /* GALERIE */
-#galerie{background:#000;padding:0;position:relative;overflow:hidden;height:70vh;max-height:550px;min-height:350px;width:100%;margin:0}
+#galerie{background:#000;padding:0;position:relative;overflow:hidden;height:75vh;max-height:600px;min-height:300px;width:100%;margin:0}
 .gallery-track{display:flex;height:100%;transition:transform .8s ease-in-out;width:100%}
 .gallery-slide{min-width:100%;height:100%;position:relative;flex-shrink:0;overflow:hidden}
 .gallery-slide img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9}
@@ -207,9 +207,8 @@ footer a{color:var(--light-blue);text-decoration:none}
     </div>
 
     <div class="croi-card">
-      <div class="croi-photo" style="background:linear-gradient(135deg,#2dc653,#1b4332)">
-        <div class="ph-icon">📷</div>
-        <div class="ph-label">VOTRE PHOTO — Les Saintes</div>
+      <div class="croi-photo" style="background:linear-gradient(135deg,#2dc653,#1b4332);overflow:hidden;padding:0">
+        <img src="https://i.postimg.cc/rzjCSX7z/IMG-7048.jpg" alt="Les Saintes" style="width:100%;height:100%;object-fit:cover;opacity:.9">
         <div class="croi-badge">4 jours</div>
       </div>
       <div class="croi-body">
@@ -257,7 +256,7 @@ footer a{color:var(--light-blue);text-decoration:none}
 <section id="galerie">
   <div class="gallery-track" id="galleryTrack">
     <div class="gallery-slide">
-      <img src="https://i.postimg.cc/ZndK5Jrh/4BB0DD08-FFFF-4AED-A396-D75EC585BC48.jpg" alt="Mayreau" style="width:100%;height:100%;object-fit:contain;object-position:center;opacity:.9;background:#000">
+      <img src="https://i.postimg.cc/c6hMQyPy/2D95EDAB-F240-4DDC-83FE-B14EC8C432DF.jpg" alt="Mayreau" style="width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9">
       <div class="gallery-caption"><h3>🌴 Mouillage de Mayreau</h3><p>📍 Grenadines</p></div>
     </div>
     <div class="gallery-slide">
@@ -265,7 +264,7 @@ footer a{color:var(--light-blue);text-decoration:none}
       <div class="gallery-caption"><h3>🐬 Rencontre avec les dauphins</h3><p>📍 Les Saintes</p></div>
     </div>
     <div class="gallery-slide">
-      <img src="https://i.postimg.cc/BvnDpwWy/5e093cd0-3058-43cf-a3cc-f26d086c2a09.jpg" alt="Wing foil Tobago Cays" style="width:100%;height:100%;object-fit:contain;object-position:center;opacity:.9;background:#0077b6">
+      <img src="https://i.postimg.cc/fkCjxn1z/5e093cd0-3058-43cf-a3cc-f26d086c2a09.jpg" alt="Wing foil Tobago Cays" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:.9">
       <div class="gallery-caption"><h3>🏄 Wing foil aux Tobago Cays</h3><p>📍 Grenadines</p></div>
     </div>
     <div class="gallery-slide">
@@ -273,12 +272,16 @@ footer a{color:var(--light-blue);text-decoration:none}
       <div class="gallery-caption"><h3>🚁 Jojuel vu du ciel</h3><p>📍 Tobago Cays</p></div>
     </div>
     <div class="gallery-slide">
+      <img src="https://i.postimg.cc/yWjXF42k/dji-fly-20260201-165814-455-1769979614400-photo-optimized.jpg" alt="Saint-Vincent" style="width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9">
+      <div class="gallery-caption"><h3>🌋 Saint-Vincent vu du ciel</h3><p>📍 Saint-Vincent & Grenadines</p></div>
+    </div>
+    <div class="gallery-slide">
       <img src="https://i.postimg.cc/Rh7N4c5x/IMG-8097.jpg" alt="Vue drone">
       <div class="gallery-caption"><h3>⛵ Le Sun Odyssey 49 vu du ciel</h3><p>📍 Grenadines</p></div>
     </div>
     <div class="gallery-slide">
       <img src="https://i.postimg.cc/9FXWD3yw/IMG-6547.jpg" alt="Chez Roméo" style="width:100%;height:100%;object-fit:contain;object-position:center;opacity:.9;background:#1b4332">
-      <div class="gallery-caption"><h3>🦞 Chez Roméo — Langoustes</h3><p>📍 Tobago Cays</p></div>
+      <div class="gallery-caption"><h3>🦞 Chez Roméo — Langoustes</h3><p>📍 Tobago Cays · <a href="https://www.instagram.com/romeo_lobster_king" target="_blank" style="color:var(--light-blue)">@romeo_lobster_king</a></p></div>
     </div>
   </div>
   <button class="gallery-btn gallery-prev" onclick="moveGallery(-1)">‹</button>
