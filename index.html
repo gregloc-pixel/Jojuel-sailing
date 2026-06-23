@@ -55,8 +55,8 @@ section{padding:76px 40px}
 /* GALERIE */
 #galerie{background:#000;padding:0;position:relative;overflow:hidden;height:75vh;max-height:600px;min-height:300px;width:100%;margin:0}
 @media(max-width:700px){#galerie{height:55vh;min-height:250px}}
-.gallery-track{display:flex;height:100%;transition:transform .8s ease-in-out;width:100%}
-.gallery-slide{min-width:100%;height:100%;position:relative;flex-shrink:0;overflow:hidden}
+.gallery-track{display:flex;height:100%;transition:transform .8s ease-in-out;width:100%;will-change:transform}
+.gallery-slide{min-width:100%;width:100%;height:100%;position:relative;flex-shrink:0;overflow:hidden}
 .gallery-slide img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9}
 .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.7));padding:20px 30px;color:#fff;font-family:sans-serif}
 .gallery-caption h3{font-size:1.1rem;margin-bottom:4px}
@@ -201,7 +201,7 @@ footer a{color:var(--light-blue);text-decoration:none}
           <span class="tag">✓ Carburant</span>
         </div>
         <div class="price-row">
-          <div class="price">3 880 € <span>/ bateau</span></div>
+          <div class="price">4 250 € <span>/ bateau</span></div>
           <a href="#calendrier" class="btn-book">Réserver</a>
         </div>
       </div>
@@ -320,6 +320,43 @@ footer a{color:var(--light-blue);text-decoration:none}
   </div>
 </section>
 
+<!-- SKIPPER -->
+<section id="skipper" style="background:var(--dark);color:#fff">
+  <div class="section-title">
+    <h2 style="color:#fff">Votre Skipper</h2>
+    <div class="divider"></div>
+  </div>
+  <div style="max-width:800px;margin:0 auto;display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:center">
+    <div style="text-align:center">
+      <div style="width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.1);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:5rem;border:3px solid var(--light-blue)">⛵</div>
+      <h3 style="color:var(--light-blue);margin-top:16px;font-size:1.2rem">Greg</h3>
+      <p style="font-family:sans-serif;font-size:.85rem;color:#aac">Skipper diplômé</p>
+    </div>
+    <div>
+      <p style="font-family:sans-serif;line-height:1.8;color:#cce;font-size:.95rem;margin-bottom:16px">Fort de <strong style="color:#fff">13 années d'expérience</strong> en voile aux Antilles et dans les Grenadines, Greg vous accompagne pour une navigation sereine, sécurisée et riche en découvertes.</p>
+      <p style="font-family:sans-serif;line-height:1.8;color:#cce;font-size:.95rem;margin-bottom:20px">Une <strong style="color:#fff">hôtesse est présente à bord</strong> pour votre confort tout au long de la croisière. Le Sun Odyssey 49 est entièrement assuré.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:12px 18px;font-family:sans-serif;font-size:.82rem;color:#aac;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:4px">🎓</div>
+          Skipper diplômé
+        </div>
+        <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:12px 18px;font-family:sans-serif;font-size:.82rem;color:#aac;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:4px">⚓</div>
+          13 ans d'expérience
+        </div>
+        <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:12px 18px;font-family:sans-serif;font-size:.82rem;color:#aac;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:4px">🛡️</div>
+          Bateau assuré
+        </div>
+        <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:12px 18px;font-family:sans-serif;font-size:.82rem;color:#aac;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:4px">👩‍🍳</div>
+          Hôtesse à bord
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ITINÉRAIRES -->
 <section id="itineraires">
   <div class="section-title">
@@ -417,7 +454,7 @@ footer a{color:var(--light-blue);text-decoration:none}
     <div class="tarif-card">
       <h3>🗺️ Grenadines</h3>
       <div style="font-family:sans-serif;font-size:.8rem;color:var(--blue);margin-bottom:4px">10 jours · Le Marin</div>
-      <div class="tarif-price">3 880 € <span>/ bateau</span></div>
+      <div class="tarif-price">4 250 € <span>/ bateau</span></div>
       <ul class="includes-list">
         <li>Nourriture à bord</li>
         <li>Draps & serviettes</li>
@@ -428,6 +465,7 @@ footer a{color:var(--light-blue);text-decoration:none}
       </ul>
       <a href="#contact" class="stripe-btn" style="background:var(--coral)">📩 Nous contacter pour réserver</a>
       <div class="stripe-badge">🔒 Paiement par virement sécurisé</div>
+    </div>
     </div>
     <div class="tarif-card">
       <h3>⚓ Mini Croisière Les Saintes</h3>
@@ -441,12 +479,12 @@ footer a{color:var(--light-blue);text-decoration:none}
         <li>Carburant</li>
         <li>Équipement snorkeling</li>
       </ul>
-      <a href="https://buy.stripe.com/demo" target="_blank" class="stripe-btn">💳 Payer par carte</a>
-      <div class="stripe-badge">🔒 Paiement sécurisé</div>
+      <a href="#contact" class="stripe-btn" style="background:var(--coral)">📩 Nous contacter pour réserver</a>
+      <div class="stripe-badge">🔒 Paiement par virement sécurisé</div>
     </div>
     <div class="tarif-card">
       <h3>🦋 Guadeloupe</h3>
-      <div style="font-family:sans-serif;font-size:.8rem;color:var(--blue);margin-bottom:4px">7 jours · Bas-du-Fort</div>
+      <div style="font-family:sans-serif;font-size:.8rem;color:var(--blue);margin-bottom:4px">7 jours · Gosier ou Saint-François</div>
       <div class="tarif-price">2 550 € <span>/ bateau</span></div>
       <ul class="includes-list">
         <li>Nourriture à bord</li>
@@ -456,8 +494,8 @@ footer a{color:var(--light-blue);text-decoration:none}
         <li>Carburant</li>
         <li>Équipement snorkeling</li>
       </ul>
-      <a href="https://buy.stripe.com/demo" target="_blank" class="stripe-btn">💳 Payer par carte</a>
-      <div class="stripe-badge">🔒 Paiement sécurisé</div>
+      <a href="#contact" class="stripe-btn" style="background:var(--coral)">📩 Nous contacter pour réserver</a>
+      <div class="stripe-badge">🔒 Paiement par virement sécurisé</div>
     </div>
   </div>
   <p style="text-align:center;font-family:sans-serif;font-size:.82rem;color:var(--gray)">Prix pour le bateau entier (4 personnes max)</p>
